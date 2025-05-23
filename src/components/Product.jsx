@@ -1,12 +1,9 @@
-export default function Product(props) {
-const price = props.price + 10000
-const desc = "This is Product Description"
+export default function Product({ value }) {
   return (
-    <div>
-      <h3>This is Product component - {props.name},{price}</h3>
-      <p>
-        {desc}
-      </p>
+    <div className="product-card">
+      <h2>{value.name}</h2>
+      <p>ID: {value.id}</p>
+      <p>Price: ${value.price}</p>
     </div>
   );
 }
