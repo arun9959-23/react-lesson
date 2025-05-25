@@ -1,15 +1,29 @@
-const containerStyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '20px',
-    marginTop: '20px',
-  };
-  const boxStyle = {
-    border: '2px solid black',
-    padding: '15px',
-    width: '200px',
-    textAlign: 'center',
-    margin: '10px',
-  };
+.app13-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.box-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.operation-box {
+  border: 2px solid black;
+  padding: 15px;
+  width: 200px;
+  font-size: 18px;
+}
+
+.input-section {
+  margin: 20px 0;
+}
+
+.input-section input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100px;
+  text-align: center;
+}
