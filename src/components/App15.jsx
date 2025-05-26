@@ -32,7 +32,7 @@ export default function App15() {
 
    
       <p>
-        <input type="text" ref={nameRef} >
+        <input type="text" ref={nameRef} />
       </p>
       <button onClick={handleSubmit}>Submit</button>
 
