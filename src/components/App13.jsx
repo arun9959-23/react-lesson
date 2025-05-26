@@ -37,8 +37,7 @@ function App13() {
       </div>
 
       <div className="input-section">
-        <p><strong>enter the number to operate
-            </strong></p>
+        <p><strong>enter the number to operate</strong></p>
         <input 
           type="number" 
           value={input} 
