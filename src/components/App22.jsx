@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 export default function App22() {
-  const [weather, setWeather] = useState('');
+  const [tmp, setTmp] = useState();
+
+  const fetchWeather = async () => {
+    const res = await axios.get("http://localhost:8080/weather");
+    setTmp(res.data);
+  };
 
   useEffect(() => {
-    axios.get('http://localhost:8080/weather')
-      .then(response => {
-        setWeather(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching weather:', error);
-      });
+    fetchWeather();
   }, []);
-
-  return (
-    <div>
-      <p> Weather: {weather}</p>
-    </div>
-  );
+  return <div style={{backgroundColor:'pink'}}>{tmp}</div>;
 }
